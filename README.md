@@ -1,24 +1,4 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+THP projet The Gossip project, le projet est censé fonctionné jusque l'exo sur les Private Message où il faut faire des "classnames"
+(Il est 1hlà jsuis en PLS bcp trop la flemme de faire un README)
