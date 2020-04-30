@@ -1,2 +1,0 @@
-class Receiveur < ApplicationRecord
-end
