@@ -8,7 +8,6 @@
 require 'faker'
 
 
-
 10.times do |index|
   ville = City.create!(
     name: Faker::Address.city
@@ -20,5 +19,23 @@ require 'faker'
     email: Faker::Internet.email,
     age: Faker::Number.between(from: 1, to: 90),
     city: ville,
+  )
+  end
+
+20.times do |index|
+  Gossip.create!(
+    title: Faker::Lorem.sentence(word_count: 4),
+    content: Faker::Lorem.sentence(word_count: 15),
+    user: User.find(rand(User.first.id..User.last.id)),
+  )
+end
+
+10.times do |index|
+  Tag.create!(
+    title: Faker::Lorem.sentence(word_count: 1),
+  )
+  TagGossip.create!(
+    tag: Tag.find(rand(Tag.first.id..Tag.last.id)),
+    gossip: Gossip.find(rand(Gossip.first.id..Gossip.last.id)),
   )
 end 
